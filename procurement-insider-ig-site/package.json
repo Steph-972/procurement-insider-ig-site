@@ -1,0 +1,10 @@
+{
+  "name": "procurement-insider-ig-site",
+  "private": true,
+  "version": "1.0.1",
+  "description": "Mini dépôt statique + API Brevo pour Instagram",
+  "scripts": {},
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,42 @@
+/* styles.css — Tokens identitaires */
+:root{
+  --pi-primary: #1D3557;  /* bleu profond */
+  --pi-secondary: #457B9D;/* bleu clair */
+  --pi-accent: #06D6A0;   /* turquoise (CTA) */
+  --pi-bg: #FFFFFF;
+  --pi-text: #1A1A1A;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--pi-bg);color:var(--pi-text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;}
+
+.container{max-width:1140px;margin:0 auto;padding:24px}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;border:1px solid var(--pi-primary);background:var(--pi-primary);color:#fff;text-decoration:none;font-weight:600}
+.btn--ghost{background:transparent;color:var(--pi-primary)}
+
+.header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.nav a{margin-left:16px;text-decoration:none;color:var(--pi-text)}
+.hero{padding:80px 0}
+.hero h1{font-size:42px;line-height:1.1;margin:0 0 12px}
+.hero p{max-width:720px;font-size:18px;opacity:.9}
+
+.grid{display:grid;gap:20px}
+.grid--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{border:1px solid #e6e6e9;border-radius:16px;padding:20px; text-decoration:none; color:inherit}
+
+.footer{padding:40px 0;border-top:1px solid #e6e6e9;margin-top:60px;font-size:14px;opacity:.8}
+
+/* IG mobile */
+.ig-mobile{max-width:560px;padding-top:24px}
+.ig-head{text-align:center;margin-bottom:12px}
+.ig-head h1{font-size:20px;margin:8px 0 4px}
+.ig-head p{opacity:.85;font-size:14px;margin:0}
+.ig-links{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.ig-btn{display:block;text-align:center;padding:14px 16px;border-radius:14px;border:1px solid var(--pi-primary);background:var(--pi-primary);color:#fff;text-decoration:none;font-weight:600}
+.ig-btn--outline{background:transparent;color:var(--pi-primary)}
+
+/* Responsive */
+@media (max-width: 780px){
+  .grid--3{grid-template-columns:1fr}
+  .hero{padding:40px 0}
+}

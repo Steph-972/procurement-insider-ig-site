@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="36" viewBox="0 0 180 36">
+  <rect width="180" height="36" rx="6" fill="#1D3557"/>
+  <circle cx="18" cy="18" r="10" fill="#06D6A0"/>
+  <path d="M18 10 L22 18 L14 18 Z" fill="#1D3557"/>
+  <text x="40" y="23" font-family="Inter, Arial, sans-serif" font-size="16" fill="#FFFFFF">Procurement Insider</text>
+</svg>

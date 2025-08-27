@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Procurement Insider — Liens Instagram</title>
+  <meta name="description" content="Liens rapides pour Instagram : articles, expertises, guides, contact.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container ig-mobile">
+    <section class="ig-head">
+      <img src="/assets/logo.svg" alt="Procurement Insider — L’Œil de l’Acheteur" width="96" height="96" style="border-radius:50%">
+      <h1>Procurement Insider</h1>
+      <p>L’Œil de l’Acheteur 👁️ • Marchés publics</p>
+    </section>
+    <nav class="ig-links" aria-label="Liens rapides Instagram">
+      <a class="ig-btn" href="/ressources?utm_source=instagram&utm_medium=bio&utm_campaign=ig-links">📖 Derniers articles</a>
+      <a class="ig-btn" href="/expertises?utm_source=instagram&utm_medium=bio&utm_campaign=ig-links">🎯 Nos expertises</a>
+      <a class="ig-btn" href="#contact">🤝 Prendre RDV</a>
+      <a class="ig-btn" href="/guides?utm_source=instagram&utm_medium=bio&utm_campaign=ig-links">📚 Modèles & guides</a>
+      <a class="ig-btn ig-btn--outline" href="/newsletter?utm_source=instagram&utm_medium=bio&utm_campaign=ig-links">📩 S’abonner</a>
+    </nav>
+
+    <section class="card" style="margin-top:20px;max-width:560px">
+      <h2>Inscription newsletter</h2>
+      <form id="ig-sub-mobile" action="/api/subscribe" method="post" novalidate>
+        <label>Email<br>
+          <input name="email" type="email" required aria-required="true" autocomplete="email"
+                 style="width:100%;padding:10px;border:1px solid #ddd;border-radius:10px">
+        </label>
+        <input type="hidden" name="listId" value="10">
+        <label style="display:flex;gap:8px;align-items:flex-start;margin:10px 0">
+          <input type="checkbox" name="consent" required aria-required="true">
+          <span>J’accepte de recevoir des emails de Procurement Insider. J’ai lu la <a href="/politique-confidentialite" target="_blank" rel="noopener">politique de confidentialité</a>.</span>
+        </label>
+        <button class="btn" type="submit">S’abonner</button>
+        <p id="ig-sub-mobile-msg" role="status" style="margin-top:8px"></p>
+      </form>
+    </section>
+  </main>
+  <script src="/script.js" defer></script>
+</body>
+</html>
